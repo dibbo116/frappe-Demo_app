@@ -1,0 +1,78 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:name1",
+ "creation": "2023-04-06 10:18:29.612032",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "bank_submission",
+  "account_entry_child",
+  "bank_submission_doc",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "bank_submission",
+   "fieldtype": "Link",
+   "label": "Bank Submission",
+   "options": "Bank Submission"
+  },
+  {
+   "fieldname": "account_entry_child",
+   "fieldtype": "Table",
+   "label": "Account Entry Child",
+   "options": "Account Entry Child"
+  },
+  {
+   "fieldname": "bank_submission_doc",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Bank Submission Doc",
+   "options": "Bank Submission"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Account Entry",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-04-06 12:46:06.502857",
+ "modified_by": "Administrator",
+ "module": "Programming Module",
+ "name": "Account Entry",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
